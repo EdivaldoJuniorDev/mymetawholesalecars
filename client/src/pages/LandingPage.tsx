@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { FinanceCalculator } from "@/components/FinanceCalculator";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import CountUp from "react-countup";
@@ -12,11 +13,13 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Badge } from "@/components/ui/badge";
 
 // Import assets
-import heroBg from "../assets/hero-bg.png";
-import cargoVan from "../assets/cargo-van.png";
-import luxurySedan from "../assets/luxury-sedan.png";
-import suv from "../assets/suv.png";
-import showroom from "../assets/showroom.png";
+import dealerAnimation from "../assets/dealer-animation.mp4";
+import heroBg from "../assets/hero-bg.webp";
+import cargoVan from "../assets/cargo-van.webp";
+import luxurySedan from "../assets/luxury-sedan.webp";
+import suv from "../assets/suv.webp";
+import showroom from "../assets/showroom.webp";
+
 
 export default function LandingPage() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -110,6 +113,17 @@ export default function LandingPage() {
             className="absolute inset-0 bg-cover bg-center transition-transform duration-[20s] hover:scale-105"
             style={{ backgroundImage: `url(${heroBg})` }}
           />
+          {/* Background Video */}
+          <video
+            autoPlay
+            muted
+            loop
+            playsInline
+            poster={heroBg}
+            className="absolute inset-0 w-full h-full object-cover"
+          >
+            <source src={dealerAnimation} type="video/mp4" />
+          </video>
           <div className="absolute inset-0 bg-black/65" />
           <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent" />
         </div>
@@ -117,9 +131,13 @@ export default function LandingPage() {
         <div className="container relative z-10 px-4 text-center mt-16">
           <div 
             data-aos="fade-up" 
-            className="inline-block mb-6 px-4 py-2 border border-primary/30 bg-primary/10 backdrop-blur-sm text-primary text-xs sm:text-sm font-bold uppercase tracking-[0.2em]"
+            className="inline-flex items-center gap-3 mb-6 px-4 py-2 border border-primary/30 bg-primary/10 backdrop-blur-sm text-primary text-xs sm:text-sm font-bold uppercase tracking-[0.2em]"
           >
-            ⭐ Pompano Beach's #1 Wholesale Dealer
+            <span className="relative flex h-2 w-2">
+              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
+              <span className="relative inline-flex rounded-full h-2 w-2 bg-green-500"></span>
+            </span>
+            CONSULTORES ONLINE AGORA
           </div>
           
           <h1 
@@ -195,6 +213,9 @@ export default function LandingPage() {
           </div>
         </div>
       </section>
+
+      {/* Finance Calculator Section */}
+      <FinanceCalculator />
 
       {/* Inventory Section */}
       <section id="inventory" className="py-24 bg-background relative">
