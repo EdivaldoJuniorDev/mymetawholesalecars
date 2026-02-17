@@ -1,0 +1,113 @@
+You are a senior frontend developer. Build a single HTML file
+landing page using the wireframe and references below.
+TECHNICAL:
+Single .html file, no external CSS
+Tailwind CSS via CDN
+Google Fonts: Barlow Condensed + Inter (via @import in <style>)
+AOS.js for scroll animations (CDN)
+CountUp.js for stat numbers (CDN)
+Video background hero (dark image fallback if no video URL)
+Mobile-first, fully responsive
+WhatsApp link: https://wa.me/1XXXXXXXXXX
+Lazy load all images, async/defer all scripts
+NO React, NO Vue — vanilla JS only
+Semantic HTML: header, nav, section, footer
+DESIGN:
+bg: #0A0A0A | cards: #111111 | borders: #1E1E1E
+accent gold: #C9A84C | hover gold: #E8C96A
+headings: Barlow Condensed uppercase | body: Inter
+btn-primary: bg #C9A84C text #0A0A0A font-bold
+btn-outline: border #C9A84C text #C9A84C
+gold glow CTAs: box-shadow 0 0 20px rgba(201,168,76,0.4)
+hover transitions on all interactive elements
+Include all meta tags and schema markup from the brief.
+WIREFRAME + COPY:
+PALETA
+#0A0A0A → fundo principal
+#111111 → cards
+#1E1E1E → bordas
+#C9A84C → dourado primário (accent)
+#E8C96A → dourado hover
+#FFFFFF → títulos
+#E0E0E0 → texto corpo
+#9A9A9A → texto secundário
+TIPOGRAFIA (Google Fonts)
+Barlow Condensed 700/800 — headlines, uppercase
+Inter 400/600 — corpo e subtítulos
+ESTILO: Dark luxury automotive
+Referência visual: Hennessey Performance, Dodge official site
+Glassmorphism leve nos cards
+Glow dourado nos CTAs: box-shadow 0 0 20px rgba(201,168,76,0.4)
+ANIMAÇÕES
+AOS.js — fade-up 800ms, delay escalonado 100/200/300ms
+CountUp.js — números da seção de stats
+Navbar — backdrop-blur ao scroll
+SEÇÃO 1 — HERO — 100vh, vídeo loop fundo, overlay 65%
+Badge: ⭐ Pompano Beach's #1 Wholesale Dealer
+HEADLINE (Barlow Condensed, enorme, branco):
+PREMIUM VEHICLES.
+WHOLESALE PRICES.
+NO GAMES.
+Subtítulo: Cargo vans, lease returns and luxury cars for individuals
+and businesses across South Florida. Financing available. Drive today.
+[🚗 BROWSE INVENTORY] [💬 CHAT ON WHATSAPP]
+↓ (scroll indicator pulsando)
+SEÇÃO 2 — STATS BAR — faixa escura, 4 colunas, separadas por linha dourada vertical
+500+ 12+ 98% $0
+Vehicles Sold Years in Biz Satisfaction Hidden Fees
+CountUp animado ao entrar em viewport
+SEÇÃO 3 — INVENTORY — grid 3 cols
+Label: OUR INVENTORY
+H2: HANDPICKED VEHICLES
+Sub: Every unit inspected, priced to move fast.
+Tabs: All | Cargo Vans | Sedans & SUVs | Luxury
+6 Cards:
+[foto 16:9] [badge AVAILABLE/RESERVED]
+Nome do veículo
+📍 45k mi | 🔧 Clean Title | ⚡ Ready
+$XX,XXX
+[View Details] [WhatsApp]
+[SEE FULL INVENTORY →]
+SEÇÃO 4 — WHY US — 2 colunas
+Esquerda: foto showroom + badge "Licensed & Bonded Dealer FL"
+Direita:
+Label: WHY CHOOSE US
+H2: The Smart Way to Buy Your Next Vehicle
+🔑 Wholesale Pricing — dealer prices, zero pressure
+🚐 Cargo Van Specialists — largest selection in Broward
+💳 Flexible Financing — all credit types welcome
+✅ Every Vehicle Inspected — clean title guarantee
+SEÇÃO 5 — CARGO VANS B2B — fundo #111111
+Label: BUSINESS OWNERS & CONTRACTORS
+H2: NEED A WORK VAN? WE'VE GOT FLEET PRICING.
+Sub: Ford Transit, Ram ProMaster, Mercedes Sprinter. Ready to work.
+3 Cards:
+🚐 Fleet Discounts — buy 2+, unlock fleet pricing
+📋 Clean Titles — ready for commercial registration
+⚡ Quick Turnaround — most units ready same day
+[GET FLEET PRICING]
+SEÇÃO 6 — REVIEWS — 3 cards glassmorphism
+Label: WHAT OUR CUSTOMERS SAY
+H2: Real People. Real Deals.
+★★★★★
+"Bought my Transit here and couldn't be happier."
+— Carlos M., Contractor, Miami FL [Google logo]
+★ 4.8/5 — Based on 87 Google Reviews
+SEÇÃO 7 — FINANCING BAND — fundo dourado #C9A84C, texto escuro
+H2 (escuro, enorme): DON'T LET CREDIT STOP YOU.
+Sub: Get pre-approved in minutes — no commitment required.
+[APPLY FOR FINANCING →]
+Quick application · Soft credit check · Same-day decision
+SEÇÃO 8 — CONTATO — 2 colunas
+Esquerda — Formulário:
+Name | Phone | Email
+Dropdown: Cargo Van / Sedan / Luxury / Fleet
+Message
+[SEND MESSAGE →]
+Direita:
+📍 Pompano Beach, FL
+📞 Telefone
+💬 WhatsApp
+🕐 Mon–Sat 9AM–7PM | Sun 10AM–5PM
+[Google Maps embed]
+FOOTER — 3 colunas: Logo+social | Quick links | Contato
